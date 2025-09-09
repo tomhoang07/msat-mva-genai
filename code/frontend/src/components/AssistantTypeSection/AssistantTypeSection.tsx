@@ -11,7 +11,7 @@ type AssistantTypeSectionProps = {
 
 enum assistantTypes {
   default = "default",
-  contractAssistant = "contract assistant",
+  contractAssistant = "data assistant",
 }
 
 export const AssistantTypeSection: React.FC<AssistantTypeSectionProps> = ({
@@ -24,13 +24,13 @@ export const AssistantTypeSection: React.FC<AssistantTypeSectionProps> = ({
         src={Azure}
         className={styles.chatIcon}
         aria-hidden="true"
-        alt="Chat with your data"
+        alt="Lonza MSAT GenAI"
       />
       {assistantType === assistantTypes.contractAssistant ? (
         <>
-          <h1 className={styles.chatEmptyStateTitle}>Contract Summarizer</h1>
+          <h1 className={styles.chatEmptyStateTitle}>Lonza MSAT MVA-GenAI</h1>
           <h2 className={styles.chatEmptyStateSubtitle}>
-            AI-Powered assistant for simplified summarization
+            AI-Powered Data Analytics and Assistant
           </h2>
           <Cards />
         </>

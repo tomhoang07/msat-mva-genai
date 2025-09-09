@@ -13,20 +13,20 @@ const Cards: React.FC = () => {
         <section className={styles.cards}>
           <FeatureCard
 
-            title="Interact with Data"
-            description="Intuitive and conversational search experience that simplifies complex queries, ultimately improves productivity, job efficiency and satisfaction.​"
+            title="Asking about Data"
+            description="Better understand and interpret the results of your MVA dataset."
             icon={<img src = {IntractData} aria-hidden="true" alt="Intract with Data" role="none" aria-label='IntractwithData' aria-labelledby='Cards' style={{ minWidth: 20, minHeight: 22 }} />}
           />
           <FeatureCard
 
-            title="Summarize Contracts"
-            description="Quickly review and summarize lengthy documents, extracting essential details to streamline document review and preparation."
+            title="Summarize Key Points"
+            description="Quickly review and summarize the key points."
             icon={<img src = {SummarizeContracts} aria-hidden="true" alt="Summarize Contracts" role="none" aria-label='SummarizeContracts' aria-labelledby='Cards'style={{ minWidth: 20, minHeight: 22 }} />}
           />
           <FeatureCard
 
-            title="Quick Source Reference"
-            description="Effortlessly retrieve and reference original documents, ensuring accuracy and comprehensiveness."
+            title="Quick Data Reference"
+            description="Extract the original reference document."
             icon={<img src = {SourceReference} aria-hidden="true" alt="Source Reference" role="none" aria-label='SourceReference' aria-labelledby='Cards' style={{ minWidth: 20, minHeight: 22 }} />}
           />
         </section>

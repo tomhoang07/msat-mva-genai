@@ -11,7 +11,7 @@ jest.mock("../../assets/Azure.svg", () => "mock-azure-svg");
 
 enum assistantTypes {
     default = "default",
-    contractAssistant = "contract assistant",
+    contractAssistant = "data assistant",
   }
 
 describe("AssistantTypeSection", () => {
@@ -23,9 +23,9 @@ describe("AssistantTypeSection", () => {
       />
     );
 
-    expect(screen.getByText("Contract Summarizer")).toBeInTheDocument();
+    expect(screen.getByText("Lonza MSAT MVA-GenAI")).toBeInTheDocument();
     expect(
-      screen.getByText("AI-Powered assistant for simplified summarization")
+      screen.getByText("AI-Powered Data Analytics and Assistant")
     ).toBeInTheDocument();
     expect(screen.getByText("Mocked Cards Component")).toBeInTheDocument();
     expect(screen.queryByText("Loading...")).not.toBeInTheDocument();
@@ -56,7 +56,7 @@ describe("AssistantTypeSection", () => {
     );
 
     expect(screen.queryByText("Chat with your")).not.toBeInTheDocument();
-    expect(screen.queryByText("Contract Summarizer")).not.toBeInTheDocument();
+    expect(screen.queryByText("Lonza MSAT MVA-GenAI")).not.toBeInTheDocument();
     expect(screen.queryByText("Mocked Cards Component")).not.toBeInTheDocument();
   });
 
@@ -80,7 +80,7 @@ describe("AssistantTypeSection", () => {
       />
     );
 
-    expect(screen.getByText("Contract Summarizer")).toBeInTheDocument();
+    expect(screen.getByText("Lonza MSAT MVA-GenAI")).toBeInTheDocument();
     expect(screen.getByText("Loading...")).toBeInTheDocument();
     expect(screen.getByRole("img", { hidden: true })).toBeInTheDocument();
   });
